@@ -3,7 +3,7 @@ import Navbar from "../components/navbar";
 
 export const metadata = {
   title: "Kelso du Mez",
-  description: "Game developer & Graphic Designer specialising in UI based in Christchurch",
+  description: "Game developer & Graphic Designer specialising in UI based in Ōtautati Christchurch",
 };
 
 export default function RootLayout({ children }) {

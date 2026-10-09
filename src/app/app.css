@@ -46,14 +46,15 @@ body {
 h1 {
   font-size: 1.8rem;
   line-height: 1;
-  font-weight: 550;
+  font-weight: 600;
   padding-bottom: 1rem;
 }
 
 h2 {
-  font-size: 1.1rem;
-  font-weight: 600;
+  font-size: 1.3rem;
+  font-weight: 400;
   padding-top: 4vh;
+  padding-bottom: 2vh;
 }
 
 p {
@@ -69,10 +70,12 @@ a {
   color: var(--accent);
   font-style: italic;
   text-decoration: none;
+  font-weight: 200;
 }
 
 a:hover {
   text-decoration: underline;
+  font-weight: 400;
 }
 
 
@@ -122,17 +125,17 @@ a:hover {
 
 .title > header {
   font-family: "Iregula", serif;
-  font-size: 2.5rem;
+  font-size: 3rem;
   line-height: 0.8;
-  font-weight: 700;
   min-width: 12vw;
+  text-wrap: nowrap;
 }
 
 .navbar {
   display: flex;
   flex-direction: column;
   grid-row: 1 / auto;
-  grid-column: 2 / 5;
+  grid-column: 2 / 6;
 }
 
 .nav-links {
@@ -242,6 +245,9 @@ img {
   .content {
     grid-column: 8 / 20;
   }
+  .title > header {
+    font-size: 4rem;
+  }
 }
 
 
@@ -273,8 +279,9 @@ img {
   }
 
   .title > header {
+    /*line-height: .9;*/
     display: flex;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
     text-align: right;
   }
 

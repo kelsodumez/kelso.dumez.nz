@@ -9,7 +9,7 @@ export default function Home() {
                 a project would be in UI/UX design, however I find myself most often filling a generalist position.
             </p>
             <br></br>
-            <p style={{fontStyle: "italic"}}>HEY YOU! If you&#39;ve somehow stumbled upon this site, it&#39;s still being built - Please come back later :) - [23/09/26] </p>
+            <p style={{fontStyle: "italic"}}>HEY YOU! If you&#39;ve somehow stumbled upon this site, it&#39;s still being built, and NEARLY DONE- Please come back later :) - [09/10/26] </p>
         </div>
     );
 }
