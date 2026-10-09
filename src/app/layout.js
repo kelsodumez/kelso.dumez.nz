@@ -6,7 +6,7 @@ export const metadata = {
     description: "Game developer & Graphic Designer specialising in UI based in Ōtautati Christchurch",
     keywords: "Kelso du Mez, Game Developer, Game UI, UI, Christchurch, Ōtautahi, Unity Developer, New Zealand, Developer, Graphic Design",
     charset: "UTF-8",
-    viewport: "width=device-width, initial-scale=1",
+    // viewport: "width=device-width, initial-scale=1",
     robots: "index, follow"
 };
 
