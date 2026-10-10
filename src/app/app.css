@@ -12,7 +12,12 @@
 
 @font-face {
   font-family: "Iregula";
-  src: url("/fonts/Iregula.otf") format("opentype");}
+  src: url("/fonts/Iregula.otf") format("opentype");
+}
+@font-face {
+  font-family: "BDO Grotesk";
+  src: url("/fonts/BDOGrotesk-VF.ttf") format("truetype");
+}
 
 /* ========================================
    BASE / RESET STYLES
@@ -26,7 +31,6 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Helvetica, sans-serif;
   height: 100vh;
   max-height: 100vh;
   width: 100vw;
@@ -37,6 +41,10 @@ body {
   grid-auto-rows: 12em;
   gap: 0;
   align-items: flex-start;
+
+  font-family: "BDO Grotesk", sans-serif;
+  letter-spacing: 0.01em;
+
 }
 
 
@@ -44,32 +52,48 @@ body {
    TYPOGRAPHY
    ======================================== */
 h1 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   line-height: 1;
-  font-weight: 600;
-  padding-bottom: 1rem;
+  font-weight: 1000;
 }
 
 h2 {
-  font-size: 1.3rem;
-  font-weight: 400;
-  padding-bottom: 2vh;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+h3 {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+
+h4 {
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+h5 {
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 p {
   font-size: 1.2rem;
   text-wrap: wrap;
+  line-height: 1.7;
+  font-weight: 300;
 }
 
 li {
   margin-left: 3vh;
+  font-weight: 100;
 }
 
 a {
   color: var(--accent);
   font-style: italic;
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 100;
 }
 
 a:hover {
@@ -145,7 +169,7 @@ a:hover {
 .content {
   overflow-y: scroll;
   scroll-behavior: smooth;
-  height: 85vh;
+  height: 90vh;
   grid-column: 8 / 24;
   grid-row: 1 / auto;
 }
@@ -154,6 +178,20 @@ a:hover {
   text-wrap: wrap;
 }
 
+br {
+  margin: 0 0 4vh 0;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  padding-bottom: 8vh;
+}
+
+.section:last-of-type {
+  padding-bottom: 0;
+}
 
 /* ========================================
    PORTFOLIO SECTION
@@ -173,6 +211,7 @@ a:hover {
 }
 
 .portfolio-item > a {
+  /*font-weight: 364;*/
   font-size: 1.25rem;
 }
 
@@ -186,9 +225,8 @@ a:hover {
    GRID & FLEXBOX UTILITIES
    ======================================== */
 .row {
-  padding-top: 2vh;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 1fr;
 }
 
 .col {
@@ -199,7 +237,7 @@ a:hover {
 }
 
 .col > * {
-  height: 6vh;
+  height: 3.5vh;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -215,7 +253,7 @@ img {
   width: 100%;
 }
 
-.video-container {
+.media-container {
   position: relative;
   overflow: hidden;
   width: 100%;
@@ -223,8 +261,9 @@ img {
   padding-top: 56.25% !important;
 }
 
-.video-container > iframe {
+.media-container > iframe {
   position: absolute;
+  border: none;
   top: 0;
   left: 0;
   bottom: 0;

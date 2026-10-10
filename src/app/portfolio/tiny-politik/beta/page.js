@@ -1,6 +1,3 @@
-import cover from "../../../../../public/tiny-politik/cover.png";
-import Image from 'next/image';
-
 export default function Page() {
     return (
         <div>

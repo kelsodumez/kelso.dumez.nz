@@ -1,11 +1,12 @@
 import React from 'react';
-import Image from "next/image";
+import ImageModal from "../../../components/modal";
 export default function Page() {
     return (
         <div>
             <h1>POS System</h1>
-            <div className="video-container">
-                <Image src="/pos-system/Pos System Preview.gif" fill={true} loading={"eager"} alt="POS System Preview"/>
+            <div className="media-container">
+                <ImageModal src="/pos-system/Pos System Preview.gif"
+                            alt="The final build of the POS system"/>
             </div>
         </div>
     );

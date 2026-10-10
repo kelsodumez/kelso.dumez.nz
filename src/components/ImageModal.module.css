@@ -1,0 +1,96 @@
+:root {
+    --background: #FDFDFD;
+    --foreground: #332C2B;
+    --accent: #7B4D35;
+}
+
+.thumbnailWrapper {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.thumbnail {
+    display: block;
+    transition: opacity 0.2s ease;
+}
+
+.thumbnail:hover {
+    opacity: 0.9;
+}
+
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+    padding: 20vh;
+    animation: fadeIn 0.1s ease;
+    transition: background-color 0.1s ease;
+}
+
+.backdropDark {
+    background-color: rgba(0, 0, 0, 0.85); /* darker when hovering image */
+}
+
+.backdropLight {
+    background-color: rgba(0, 0, 0, 0.75); /* lighter when hovering backdrop */
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.modalContent {
+    position: relative;
+    max-width: 90vw;
+    max-height: 90vh;
+    animation: slideUp 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.enlargedImage {
+    max-width: 100%;
+    max-height: 90vh;
+    width: auto;
+    height: auto;
+    display: block;
+}
+
+.altText > * {
+    color: var(--background);
+    /*font-size: 1.2rem;*/
+}
+
+@media (max-width: 1150px) {
+    .backdrop {
+        padding: 2vw;
+    }
+    .enlargedImage {
+        max-height: 85vh;
+    }
+}
