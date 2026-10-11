@@ -10,7 +10,7 @@ const portfolioItems_graphic = [
     {
         name: 'Eye Magazine Webpage',
         href: '/portfolio/eye-webpage/',
-        tag: 'Graphic Design'
+        tag: 'Graphic Design, Web Design'
     },
     {
         name: 'Stomp!',
@@ -28,12 +28,11 @@ const portfolioItems_dev = [
     {
         name: 'Tiny Politik (Alpha)',
         href: '/portfolio/tiny-politik/alpha',
-        tag: "UI/UX Design, Unity Engine"//,
-        // description: "Design and implementation of UI for the alpha prototype of a asynchronous 4X multiplayer game."
+        tag: "Learning UI/UX design through the alpha prototype of an asynchronous 4X multiplayer game."
     },
     {
         name: 'Tiny Politik (Beta) Dynamic UI Panels',
-        href: '/portfolio/tiny-politik/beta/dynamic-panel',
+        href: '/portfolio/tiny-politik/beta/panel-system',
         tag: "UI/UX Design, Unity Engine, UI Toolkit"
     },
     {

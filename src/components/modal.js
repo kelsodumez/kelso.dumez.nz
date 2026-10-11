@@ -30,7 +30,7 @@ export default function ImageModal({ src, alt, ...props}) { //width, height, ...
                     src={src}
                     alt={alt}
                     fill={true}
-                    objectFit="contain"
+                    objectFit="cover"
                     onClick={handleOpenModal}
                     className={styles.thumbnail}
                     {...props}
