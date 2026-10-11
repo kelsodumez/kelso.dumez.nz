@@ -225,7 +225,7 @@ br {
 .tag {
   /*font-style: italic;*/
   font-weight: 100;
-  width: 50%;
+  width: 80%;
 }
 
 
@@ -234,7 +234,14 @@ br {
    ======================================== */
 .row {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
+}
+
+.row-flex {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  /*grid-template-columns: 1fr 1fr;*/
 }
 
 .col {
@@ -246,7 +253,7 @@ br {
 }
 
 .col > * {
-  height: 3.5vh;
+  height: fit-content;
   display: flex;
   flex-direction: column;
   align-items: stretch;
@@ -261,9 +268,7 @@ br {
    MEDIA & IMAGES
    ======================================== */
 img {
-  /*padding-top: 2vh;*/
-  /*padding-bottom: 2vh;*/
-  width: 100%;
+  height: fit-content;
 }
 
 .media-container {
@@ -272,17 +277,34 @@ img {
   width: 100%;
   height: fit-content;
   padding-top: 56.25% !important;
+  cursor: pointer;
+
 }
 
-.media-container > iframe {
-  position: absolute;
+.media-container > * {
   border: none;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
+  width: stretch;
+
+}
+
+@media (max-width: 1150px) {  .media-container > * {padding: 0 5vw 0 5vw;}  }
+
+.media-container > iframe {
+  position: absolute;
   width: 100%;
   height: 100%;
+}
+
+.tall-image-container {
+  position: relative;
+  max-height: 60vh;
+  width: 40%;
+  height: auto;
+  overflow: auto;
 }
 
 
@@ -300,13 +322,13 @@ img {
   .title > header {
     font-size: 4rem;
   }
+  .row {
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+  }
 }
 
-
-/* ========================================
-   RESPONSIVE: MOBILE (500px and below)
-   ======================================== */
-@media (max-width: 500px) {
+@media (max-width: 599px) {
   body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(14, 1fr);

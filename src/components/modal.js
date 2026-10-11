@@ -29,7 +29,13 @@ export default function ImageModal({ src, alt, ...props}) { //width, height, ...
                 <Image
                     src={src}
                     alt={alt}
-                    fill={true}
+                    sizes={"100vw"}
+                    // style={{
+                    //     width: "100%",
+                    //     height: "auto",
+                    // }}
+                    width={0} // need to set width and height so NextJS doesnt freak out, but the style will override so it doesnt matter
+                    height={0}
                     objectFit="cover"
                     onClick={handleOpenModal}
                     className={styles.thumbnail}
@@ -38,14 +44,13 @@ export default function ImageModal({ src, alt, ...props}) { //width, height, ...
             </div>
 
             {isOpen && (
-                <div
-                    className={`${styles.backdrop} ${isHoveringImage ? styles.backdropDark : styles.backdropLight}`}
+                <div className={`${styles.backdrop} ${isHoveringImage ? styles.backdropDark : styles.backdropLight}`}
                     onClick={handleBackdropClick}
                     onKeyDown={handleEscapeKey}
                     role="dialog"
                     aria-modal="true"
-                    aria-label={`Modal showing enlarged ${alt}`}
-                >
+                    aria-label={`Modal showing enlarged ${alt}`}>
+
                     <div className={styles.modalContent}
                         onMouseEnter={() => setIsHoveringImage(true)}
                         onMouseLeave={() => setIsHoveringImage(false)}>
@@ -55,8 +60,7 @@ export default function ImageModal({ src, alt, ...props}) { //width, height, ...
                             width={0} // can just set this to whatever, it's getting overriden in css anyway :P
                             height={0}
                             className={styles.enlargedImage}
-                            priority
-                        />
+                            priority/>
                         <div className={styles.altText}>
                             <p>{alt}</p>
                         </div>

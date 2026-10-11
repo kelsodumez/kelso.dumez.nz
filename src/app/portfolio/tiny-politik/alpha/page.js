@@ -4,18 +4,37 @@ import Image from "next/image";
 export default function Page() {
     return (
         <div>
-            <div className="section">
-                <h1>Tiny Politik (Alpha)</h1>
 
-                <div className="media-container">
-                    <ImageModal src="/tiny-politik/alpha/cover.png" alt="Tiny Politik Photo"/>
-                </div>
 
-            </div>
+
+            <div className={"section"}><h1>Tiny Politik (Alpha)</h1></div>
+
+
+
             <div className="section">
-                <h2>Overview</h2>
 
                 <div className="row">
+                    <div className={"section"}>
+                        <p>
+                            <b><i>Tiny Politik</i> is a prototype produced over a period of twelve weeks</b> under the
+                            supervision of Clancy Duncan (UC) as part of the PROD322 ‘Gaming Project Studio 2’ course at the
+                            University of Canterbury in 2024.
+                        </p>
+                    </div>
+                    <ImageModal src="/tiny-politik/alpha/cover.png" alt="Tiny Politik Photo"/>
+                </div>
+            </div>
+
+
+
+            <div className="section">
+
+
+                <h2>Overview</h2>
+
+
+                <div className="row">
+
                     <div className="col">
                         <div className="table-item"><h4>Soft Skills Developed</h4></div>
                         <div className="table-item"><li>Creative leadership & management</li></div>
@@ -23,6 +42,7 @@ export default function Page() {
                         <div className="table-item"><li>Player-centric experience design</li></div>
                         <div className="table-item"><li>User interface design</li></div>
                     </div>
+
                     <div className="col">
                         <div className="table-item"><h4>Technical Skills Developed</h4></div>
                         <div className="table-item"><li>User interface design & Implementation</li></div>
@@ -30,6 +50,7 @@ export default function Page() {
                         <div className="table-item"><li>In-engine content creation</li></div>
                     </div>
                 </div>
+
                 <div className="media-container">
                     <iframe className="responsive-iframe" src="https://www.youtube.com/embed/rYzxd1EN6to?autoplay=1&mute=1"
                             title="TinyPolitik | Multiplayer Casual Strategy Trailer"
@@ -38,46 +59,84 @@ export default function Page() {
                             style={{ zoom: 0.7 }}
                             allowFullScreen></iframe>
                 </div>
+
+
                 <i>
                     You can check out the Tiny Politik Alpha yourself here on <
                     a target="_blank" href={"https://olivercoates1.itch.io/tinypolitk"}>itch</a>
                     , although it requires running a WebGL-based server (instructions in itch description).
                 </i>
+
                 <br></br>
-                <p>
-                    <b><i>Tiny Politik</i> is a prototype produced over a period of twelve weeks</b> under the
-                    supervision of Clancy Duncan (UC) as part of the PROD322 ‘Gaming Project Studio 2’ course at the
-                    University of Canterbury in 2024.
-                </p>
+
                 <p>
                     Our goal with <i>Tiny Politik</i> was to run an <b>extended qualitative playtest</b>; exploring the
                     potential of <b>asynchronous multiplayer in 4X games</b> as a tool to <b>engage both casual and
                     serious players</b> simultaneously.
                 </p>
+
                 <p>
                     Initially my role in this project was implementation of UI designed by our artist, however we
                     quickly discovered that this was a poor workflow, as the artist had little in-engine or UX design
                     experience at the time. To amend this, <b>I took over the design of UI completely</b>; Directing our artists
                     in their creation of UI assets, as at the time I had little confidence in UI art creation.
                 </p>
+
                 <p>
                     <b>This project was where I discovered my passion for UI/UX design</b>. As such, it&#39;s a little rough
                     around the edges; thanks to my learning as I went. <b>I look forward to sharing the beta version of
                     <i> Tiny Politik</i>&#39;s interface design soon</b>, where I will have corrected the various
                     design errors born from my lack of design education at the time.
                 </p>
+
                 <i>
-                    Check my page discussing my implementation of a <a target="_blank" href={"/portfolio/tiny-politik/beta/panel-system"}>
-                    dynamic panel system in Unity&#39;s UI Toolkit</a> for the Beta release.
+                    Check my page discussing my WIP implementation of a <a target="_blank" href={"/portfolio/tiny-politik/beta/panel-system"}>
+                    dynamic panel system in Unity&#39;s UI Toolkit</a> for our Beta release.
                 </i>
 
             </div>
+
+
+
             <div className="section">
                 <h2>Interface Design</h2>
-                <h3>Main Menu</h3>
-                <h3>In-Game Menus</h3>
-                <p>some reflective stuff here</p>
+                {/*<h3>In-Game Menus</h3>*/}
+                {/*<br></br>*/}
+                {/*<h4>Adapting the Developer UI</h4>*/}
+                {/*<div className="row">*/}
+                    {/*<ImageModal src={"/tiny-politik/alpha/MilitaryPanelDevArt.png"} alt={"Oliver's quick and dirty panel"}/>*/}
+                    {/*<ImageModal src={"/tiny-politik/alpha/MilitaryPanel.png"} alt={"MilitaryPanel"}/>*/}
+                {/*</div>*/}
+                <ImageModal src={"/tiny-politik/alpha/NuclearPanel.png"} alt={"panel"}/>
+                <div className={"row"}>
+                    <p>aaa</p>
+                    <div className={"col"}>
+                        <ImageModal src={"/tiny-politik/alpha/TechTree.png"} alt={"panel"}/>
+                    </div>
+                </div>
+                <br></br>
+                <h4>User Creation</h4>
+                    <div className="row">
+                        <p>Lorum Ipsum Dolor</p>
+                        <ImageModal src={"/tiny-politik/alpha/JoinPanel.png"} alt={"panel"}/>
+                    </div>
+                <br></br>
+                <h4>Side Panels</h4>
+                    <div className="row">
+                        <p>Lorum Ipsum Dolor</p>
+                        <div className="row-flex">
+                            <div className={"tall-image-container"}>
+                                <ImageModal src={"/tiny-politik/alpha/EconomyPanel.png"} alt={"panel"}/>
+                            </div>
+                            <div className={"tall-image-container"}>
+                                <ImageModal src={"/tiny-politik/alpha/MilitaryPanel.png"} alt={"panel"}/>
+                            </div>
+                        </div>
+                    </div>
             </div>
+
+
+
             <div className="section">
                 <h2>Playtesting</h2>
                 <h3>Paper Prototype(s)</h3>
@@ -85,14 +144,10 @@ export default function Page() {
                     Two paper prototypes were conducted whilst other team members were developing the network solution
                     for the
                 </p>
-                <div className="media-container">
                     <ImageModal src={"/tiny-politik/alpha/discordPlaytest.gif"}
                                 alt={"The playtest lasted 5 turns, each turn taking a bit over an hour to process manually"}/>
-                </div>
-                <div className="media-container">
                     <ImageModal src="/tiny-politik/alpha/Economy Final Turn.png"
                                 alt="Economy was handled via a spreadsheet"/>
-                </div>
             </div>
         </div>
     );

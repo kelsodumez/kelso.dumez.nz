@@ -8,6 +8,11 @@ const portfolioItems_graphic = [
         tag: "Graphic Design, Brand-Identity"
     },
     {
+        name: 'Design work for Ōtautahi Bands',
+        href: '/portfolio/design-4-bands/',
+        tag: "Graphic Design, Design"
+    },
+    {
         name: 'Eye Magazine Webpage',
         href: '/portfolio/eye-webpage/',
         tag: 'Graphic Design, Web Design'
@@ -16,20 +21,10 @@ const portfolioItems_graphic = [
         name: 'Stomp!',
         href: '/portfolio/stomp',
         tag: "Graphic Design, Typeface Design"
-    },
-    {
-        name: 'Design work for Ōtautahi Bands',
-        href: '/portfolio/design-4-bands/',
-        tag: "Graphic Design, Design"
     }
 ];
 
 const portfolioItems_dev = [
-    {
-        name: 'Tiny Politik (Alpha)',
-        href: '/portfolio/tiny-politik/alpha',
-        tag: "Learning UI/UX design through the alpha prototype of an asynchronous 4X multiplayer game."
-    },
     {
         name: 'Tiny Politik (Beta) Dynamic UI Panels',
         href: '/portfolio/tiny-politik/beta/panel-system',
@@ -39,6 +34,11 @@ const portfolioItems_dev = [
         name: 'Point of Sales System Spoof',
         href: '/portfolio/pos-system',
         tag: "Unity Engine"
+    },
+    {
+        name: 'Tiny Politik (Alpha)',
+        href: '/portfolio/tiny-politik/alpha',
+        tag: "Learning UI/UX design through the alpha prototype of an asynchronous 4X multiplayer game."
     }
 ];
 
