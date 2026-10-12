@@ -96,7 +96,7 @@
 
 
 
-@media (max-width: 1150px) {
+@media (max-width: 1300px) {
     .backdrop {
         padding: 2vw;
     }
@@ -108,13 +108,32 @@
     .thumbnailWrapper {
         display: flex;
         flex-direction: column;
-        padding: 0 5vw 0 5vw;
+        padding: 0 2vw 0 2vw;
     }
 
     .thumbnail {
         /*height: 30vh;*/
+        max-width: 45vw;
         width: 100%;
         height: auto;
         align-self: center;
+    }
+}
+
+@media (max-width: 900px)
+{
+    .thumbnail {
+        max-width: 100%;
+    }
+
+    .thumbnailWrapper {
+        padding: 0 5vw 0 5vw;
+    }
+}
+
+@media (max-width: 599px)
+{
+    .thumbnailWrapper {
+        padding: 0 3vw 0 3vw;
     }
 }

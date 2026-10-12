@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
   return (
       <html lang="en">
       <head>
-          <title>Kelso du Mez</title>
+          <title><a href={"/"}>Kelso du Mez</a></title>
           <meta name="google-site-verification" content="nepHzCd3kLgbsMerKFsSTE9wv2x54KRa9sF2bX0arVQ"/>
           <meta name="msvalidate.01" content="7BC3B1435A92F48144F97876DF237EC7"/>
           <link rel="icon" href="/src/app/icon.svg" type="image/svg+xml"/>

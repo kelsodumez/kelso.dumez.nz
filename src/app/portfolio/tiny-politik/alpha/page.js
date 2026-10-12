@@ -1,5 +1,5 @@
 import React from 'react';
-import ImageModal from "../../../../components/modal";
+import ImageModal from "../../../../components/ImageModal/modal";
 import Image from "next/image";
 export default function Page() {
     return (
@@ -29,9 +29,7 @@ export default function Page() {
 
             <div className="section">
 
-
                 <h2>Overview</h2>
-
 
                 <div className="row">
 
@@ -51,6 +49,8 @@ export default function Page() {
                     </div>
                 </div>
 
+                <br></br>
+
                 <div className="media-container">
                     <iframe className="responsive-iframe" src="https://www.youtube.com/embed/rYzxd1EN6to?autoplay=1&mute=1"
                             title="TinyPolitik | Multiplayer Casual Strategy Trailer"
@@ -59,7 +59,6 @@ export default function Page() {
                             style={{ zoom: 0.7 }}
                             allowFullScreen></iframe>
                 </div>
-
 
                 <i>
                     You can check out the Tiny Politik Alpha yourself here on <
@@ -84,7 +83,7 @@ export default function Page() {
 
                 <p>
                     <b>This project was where I discovered my passion for UI/UX design</b>. As such, it&#39;s a little rough
-                    around the edges; thanks to my learning as I went. <b>I look forward to sharing the beta version of
+                    around the edges; thanks to my learning as I went and the project&#39;s brief timeline. <b>I look forward to sharing the beta version of
                     <i> Tiny Politik</i>&#39;s interface design soon</b>, where I will have corrected the various
                     design errors born from my lack of design education at the time.
                 </p>
@@ -100,38 +99,33 @@ export default function Page() {
 
             <div className="section">
                 <h2>Interface Design</h2>
-                {/*<h3>In-Game Menus</h3>*/}
-                {/*<br></br>*/}
-                {/*<h4>Adapting the Developer UI</h4>*/}
-                {/*<div className="row">*/}
-                    {/*<ImageModal src={"/tiny-politik/alpha/MilitaryPanelDevArt.png"} alt={"Oliver's quick and dirty panel"}/>*/}
-                    {/*<ImageModal src={"/tiny-politik/alpha/MilitaryPanel.png"} alt={"MilitaryPanel"}/>*/}
-                {/*</div>*/}
+
+                <ImageModal src={"/tiny-politik/alpha/12@11.25.21.png"} alt={"panel"}/>
                 <ImageModal src={"/tiny-politik/alpha/NuclearPanel.png"} alt={"panel"}/>
-                <div className={"row"}>
-                    <p>aaa</p>
-                    <div className={"col"}>
-                        <ImageModal src={"/tiny-politik/alpha/TechTree.png"} alt={"panel"}/>
-                    </div>
-                </div>
+                    <p>
+                        Due to the short timespan, and our poor understanding of UI workflows, most of my time was spent
+                        reskinning and adjusting UI made by developers. With hindsight, I would have first designed the
+                        UI/UX holistically in a program such as Figma; then blocking it out in Unity.
+                    </p>
                 <br></br>
-                <h4>User Creation</h4>
+                <h4>Panels</h4>
                     <div className="row">
                         <p>Lorum Ipsum Dolor</p>
-                        <ImageModal src={"/tiny-politik/alpha/JoinPanel.png"} alt={"panel"}/>
-                    </div>
-                <br></br>
-                <h4>Side Panels</h4>
-                    <div className="row">
-                        <p>Lorum Ipsum Dolor</p>
-                        <div className="row-flex">
-                            <div className={"tall-image-container"}>
-                                <ImageModal src={"/tiny-politik/alpha/EconomyPanel.png"} alt={"panel"}/>
-                            </div>
-                            <div className={"tall-image-container"}>
-                                <ImageModal src={"/tiny-politik/alpha/MilitaryPanel.png"} alt={"panel"}/>
+                        <div>
+                            <ImageModal src={"/tiny-politik/alpha/JoinPanel.png"} alt={"panel"}/>
+                            <div className="row-flex">
+                                <div className={"tall-image-container"}>
+                                    <ImageModal src={"/tiny-politik/alpha/EconomyPanel.png"} alt={"panel"}/>
+                                </div>
+                                <div className={"tall-image-container"}>
+                                    <ImageModal src={"/tiny-politik/alpha/MilitaryPanel.png"} alt={"panel"}/>
+                                </div>
                             </div>
                         </div>
+                    </div>
+                    <div className="row">
+                        <p></p>
+
                     </div>
             </div>
 

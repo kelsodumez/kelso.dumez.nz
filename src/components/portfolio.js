@@ -26,9 +26,16 @@ const portfolioItems_graphic = [
 
 const portfolioItems_dev = [
     {
+        name: 'Witchy DOOM Style UI for a Game Jam',
+        href: '/portfolio/witch-ui',
+        tag: "UI/UX Design, Unity Engine, UI Toolkit",
+        date: new Date(2026, 8)
+    },
+    {
         name: 'Tiny Politik (Beta) Dynamic UI Panels',
         href: '/portfolio/tiny-politik/beta/panel-system',
-        tag: "UI/UX Design, Unity Engine, UI Toolkit"
+        tag: "UI/UX Design, Unity Engine, UI Toolkit",
+        date: new Date(2026, 5)
     },
     {
         name: 'Point of Sales System Spoof',
