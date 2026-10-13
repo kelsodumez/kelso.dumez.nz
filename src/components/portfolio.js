@@ -50,7 +50,7 @@ const portfolioItems_dev = [
 ];
 
 export default function PortfolioItemsDesign() {
-    return <div className={"Portfolio"}>
+    return <div>
         {
             portfolioItems_graphic.map((item) =>
             {
@@ -63,7 +63,7 @@ export default function PortfolioItemsDesign() {
         }</div>}
 
 export function PortfolioItemsDev() {
-    return <div className={"Portfolio"}>
+    return <div>
         {
             portfolioItems_dev.map((item) => {
                 return <div className={"portfolio-item"} key={item.name}>

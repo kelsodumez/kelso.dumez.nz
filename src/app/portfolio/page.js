@@ -4,12 +4,12 @@ export default function Portfolio() {
     return (
         <div>
             <div className="row">
-            <div className="section">
+            <div className={"Portfolio"}>
                 <h2>Digital Design</h2>
                 <PortfolioItemsDesign />
             </div>
 
-            <div className="section">
+            <div className={"Portfolio"}>
                 <h2>Unity Engine</h2>
                 <PortfolioItemsDev />
             </div>
