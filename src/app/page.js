@@ -25,7 +25,7 @@ export default function Home() {
             <div className={"section"}>
                 <div>
                     <h4>What I&#39;ve been listening to recently:</h4>
-                    <div className={"media-container"}>
+                    <div className={"music-container"}>
                         <iframe loading={"eager"}  title={"My Top Albums in the last 30 days"}
                                 src={"https://lastfm-embed.vercel.app/api/top-albums?user=keslo_&lang=en&theme=dark&borderSize=0&borderRadius=0&showTitle=false&bgColor=%2300000000&textColor=%237B4D35&urlColor=%237B4D35&scrobbleColor=%23332C2B&limit=6&period=1month&layout=vertical&rows=0&columns=2"}
                         ></iframe>

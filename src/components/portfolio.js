@@ -9,11 +9,11 @@ const portfolioItems_graphic = [
     },
     {
         name: 'Design work for Ōtautahi Bands',
-        href: '/portfolio/design-4-bands/',
+        href: '/portfolio/bands/',
         tag: "Graphic Design, Design"
     },
     {
-        name: 'Eye Magazine Webpage',
+        name: 'Eye Magazine Webpage Mockup',
         href: '/portfolio/eye-webpage/',
         tag: 'Graphic Design, Web Design'
     },

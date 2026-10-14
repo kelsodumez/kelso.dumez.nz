@@ -41,8 +41,7 @@ export default function Page() {
                 <h1>Process</h1>
                 <div className={"row"}>
                     <div className={"section"}>
-                        <p>Block outs? (Find Them)</p>
-                        <h2>Implementation</h2>
+                        {/*<p>Block outs? (Find Them)</p>*/}
                         <p>
                             Given the time and budget available for this project, I settled on using this
                             <a href={"https://comp3interactive.itch.io/retro-windows-gui"}> free GUI pack from Itch</a>.
@@ -68,11 +67,11 @@ export default function Page() {
                             shooting.
                         </p>
 
-                        <h3>Changes to the Brief</h3>
-                        <p>
-                            As is the nature with any creative project, I received alterations to the initial brief based on
-                            emerging complexities.
-                        </p>
+                        {/*<h3>Changes to the Brief</h3>*/}
+                        {/*<p>*/}
+                        {/*    As is the nature with any creative project, I received alterations to the initial brief based on*/}
+                        {/*    emerging complexities.*/}
+                        {/*</p>*/}
                     </div>
                     <ImageModal src="/pos-system/Brief.png" alt="The brief provided by Matthew."/>
                 </div>

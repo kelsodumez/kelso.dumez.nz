@@ -4,7 +4,7 @@ import Link from "next/link";
 import { usePathname } from "next/navigation";
 
 const navigation = [
-    { name: 'About', href: '/' },
+    // { name: 'About', href: '/' },
     { name: 'Portfolio', href: '/portfolio' },
     {name: 'Contact', href: '/contact' },
 ];
@@ -18,8 +18,8 @@ export default function Navbar() {
     return (
         <div className="navbar">
             <div className="title">
-                <header>Kelso</header>
-                <header>du Mez</header>
+                <header><Link href={"/"}>Kelso</Link></header>
+                <header><Link href={"/"}>du Mez</Link></header>
                 {/*<header></header>*/}
             </div>
             <div className="nav-links">

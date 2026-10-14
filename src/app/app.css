@@ -162,15 +162,18 @@ a:hover {
   grid-row: 1 / 2;
   grid-column: 2 / 5;
   text-align: left;
-  padding-bottom: 8vh;
+  padding-bottom: 5vh;
 }
 
-.title > header {
+.title > header > a {
   font-family: "Iregula", serif;
   font-size: 3rem;
   line-height: 0.8;
   min-width: 12vw;
   text-wrap: nowrap;
+  font-style: revert;
+  color: var(--foreground);
+  text-decoration: none;
 }
 
 .navbar {
@@ -183,6 +186,15 @@ a:hover {
 .nav-links {
   display: flex;
   flex-direction: column;
+}
+
+.nav-links > * {
+  font-weight: 100;
+}
+
+
+.nav-links > *:not(:last-child) {
+  padding-bottom: 2vh;
 }
 
 .content {
@@ -295,25 +307,31 @@ img {
   position: relative;
   overflow: hidden;
   width: 100%;
-  height: fit-content;
+  height: 0;
   padding-top: 56.25% !important;
   cursor: pointer;
 
 }
 
-.media-container > * {
+.music-container {
+  position: relative;
+  overflow: hidden;
+  height: 0;
+  padding-top: 56.25% !important;
+  cursor: pointer;
+}
+
+.media-container > *, .music-container > * {
   border: none;
   top: 0;
   left: 0;
   bottom: 0;
   right: 0;
-  width: stretch;
-
-}
+  width: stretch;}
 
 
 
-.media-container > iframe {
+.media-container > iframe, .music-container > iframe {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -329,7 +347,7 @@ img {
 
 
 @media (max-width: 1300px) {
-  .media-container > * {
+  .media-container > *, .music-container > * {
     padding: 0 2vw 0 2vw;
   }
 }
@@ -340,8 +358,8 @@ img {
   }
 
 
-  .title > header {
-    font-size: 4rem;
+  .title > header > a {
+    font-size: 3.5rem;
   }
 
   p {
@@ -359,10 +377,13 @@ img {
     max-width: 43vw;
   }
 
-  .row > :last-child:not(.Portfolio) {
+  .row > :last-child:not(.Portfolio):not(.ImageModal-module__1IdVYa__backdrop, .ImageModal-module__1IdVYa__backdropLight) {
     max-width: 28vw;
   }
 
+  .ImageModal-module__1IdVYa__backdrop, .ImageModal-module__1IdVYa__backdropLight {
+    max-width: 100vw;
+  }
 
   /*.row > :first-child {*/
   /*  grid-column: 1 / 6;*/
@@ -376,6 +397,11 @@ img {
   .content {
     grid-column: 6 / 24;
   }
+
+  .music-container {
+    width: 50%;
+  }
+
 }
 
 @media (min-width: 1700px) {
@@ -406,7 +432,10 @@ img {
     flex-direction: column;
     width: 100%;
     padding-bottom: 0;
+    justify-content: flex-start;
   }
+
+
 
   .title > header {
     /*line-height: .9;*/
@@ -418,18 +447,24 @@ img {
   .navbar {
     flex-direction: row;
     grid-column: 1 / 7;
+    justify-content: space-between;
     grid-row: 1 / 1;
+    align-items: flex-end;
   }
+
   .nav-links {
     display: flex;
-    width: fit-content;
-    height: auto;
     justify-content: space-between;
     align-items: flex-end;
   }
 
-  /*.nav-links > * {*/
-  /*  align-content: space-between;*/
+  .nav-links > a {
+    font-size: 1.35rem;
+    font-weight: 100;
+  }
+
+  /*.nav-links > *:not(:first-child) {*/
+  /*  !*padding-top: 1vh;*!*/
   /*}*/
 
   .content {
@@ -471,5 +506,16 @@ img {
 
   p {
     line-height: 2.45;
+  }
+
+  .music-container {
+    padding-top: 0 !important;
+    height: fit-content;
+    /*overflow: clip;*/
+  }
+
+  .music-container > iframe {
+    position: relative;
+    height: 50vh;
   }
 }

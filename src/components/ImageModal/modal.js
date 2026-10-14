@@ -6,6 +6,7 @@ import styles from './ImageModal.module.css';
 
 export default function ImageModal({ src, alt, ...props}) { //width, height, ...props }) {
     const [isOpen, setIsOpen] = useState(false);
+
     const handleOpenModal = () => setIsOpen(true);
     const handleCloseModal = () => setIsOpen(false);
     const [isHoveringImage, setIsHoveringImage] = useState(false);
@@ -30,10 +31,9 @@ export default function ImageModal({ src, alt, ...props}) { //width, height, ...
                     src={src}
                     alt={alt}
                     sizes={"100vw"}
-                    // style={{
-                    //     width: "100%",
-                    //     height: "auto",
-                    // }}
+                    style={{
+                        width: "100%",
+                    }}
                     width={0} // need to set width and height so NextJS doesnt freak out, but the style will override so it doesnt matter
                     height={0}
                     objectFit="cover"
