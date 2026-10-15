@@ -217,7 +217,7 @@ br {
   display: flex;
   flex-direction: column;
   gap: 2rem;
-  padding-bottom: 8vh;
+  padding-bottom: 12vh;
 }
 
 .section:last-of-type {
@@ -234,6 +234,10 @@ br {
   justify-self: end;
   width: fit-content;
   padding-right: 8vw;
+}
+
+.Portfolio > h2 {
+  padding-bottom: 2vh;
 }
 
 .portfolio-item {
@@ -265,15 +269,15 @@ br {
   flex-direction: column;
   gap: 2vw;
   width: fit-content;
-  justify-content: flex-start;
+  justify-content: space-between;
 
 }
 
 .row-flex {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
-  /*grid-template-columns: 1fr 1fr;*/
+  justify-content: flex-start;
+  gap: 12vw;
 }
 
 .col {
@@ -367,14 +371,13 @@ img {
   }
 
   .row {
-    /*display: grid;*/
-    /*grid-template-columns: Repeat(8, 1fr);*/
-    gap: 4vw;
+    width: 100%;
+    justify-content: space-between;
     flex-direction: row;
   }
 
   .row > * {
-    max-width: 43vw;
+    /*max-width: 43vw;*/
   }
 
   .row > :last-child:not(.Portfolio):not(.ImageModal-module__1IdVYa__backdrop, .ImageModal-module__1IdVYa__backdropLight) {
@@ -406,7 +409,7 @@ img {
 
 @media (min-width: 1700px) {
   p {
-    max-width: 38vw;
+    max-width: 39vw;
   }
 }
 
@@ -517,5 +520,10 @@ img {
   .music-container > iframe {
     position: relative;
     height: 50vh;
+  }
+
+  .row-flex{
+    flex-direction: column;
+    gap: 8vw;
   }
 }

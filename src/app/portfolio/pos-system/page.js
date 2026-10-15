@@ -6,8 +6,8 @@ export default function Page() {
             <div className="section">
                 <h1>POS System</h1>
                 <div className="media-container">
-                    <iframe className="responsive-iframe" src="https://www.youtube.com/embed/pY_XyjT_rb4?autoplay=1&mute=1"
-                            title="TinyPolitik | Multiplayer Casual Strategy Trailer"
+                    <iframe className="responsive-iframe" src="https://www.youtube.com/embed/pY_XyjT_rb4?autoplay=0&mute=1"
+                            title="POS System In-Film"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                             referrerPolicy="strict-origin-when-cross-origin"
                             style={{ zoom: 0.7 }}
@@ -29,8 +29,11 @@ export default function Page() {
                             and required frequent iteration to match any script changes.
                         </p>
                         <p>
-                            As filming was on-location at Graphic Comics (Wellington), a lightweight web tool was needed to mitigate
-                            any potential difficulties with whatever hardware was available.
+                            As filming was on-location at Graphic Comics (Wellington), a lightweight web tool was needed
+                            to mitigate any potential difficulties with whatever hardware was available. I considered
+                            producing this tool by making static pages, making it a glorified slideshow; But wanted the
+                            tool to feel more believable through little details such as button-hover behaviour and the
+                            interactive login screen.
                         </p>
                     </div>
                     <ImageModal src="/pos-system/Pos System Preview.gif" alt="The final build of the POS system"/>
@@ -66,12 +69,6 @@ export default function Page() {
                             the visual presentation of the tool, and helped increase the flexibility of the tool for
                             shooting.
                         </p>
-
-                        {/*<h3>Changes to the Brief</h3>*/}
-                        {/*<p>*/}
-                        {/*    As is the nature with any creative project, I received alterations to the initial brief based on*/}
-                        {/*    emerging complexities.*/}
-                        {/*</p>*/}
                     </div>
                     <ImageModal src="/pos-system/Brief.png" alt="The brief provided by Matthew."/>
                 </div>
