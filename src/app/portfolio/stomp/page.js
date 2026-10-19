@@ -1,12 +1,15 @@
 import ImageModal from "../../../components/ImageModal/modal";
+import React from "react";
 
 export default function Page() {
     return (
         <div>
-            <h1>Stomp</h1>
-
-            {/*need to upscale this*/}
-            <ImageModal src={"/tiny-politik/panel-system/v5.png"} alt={"V5"}/>
+            <h1>Stomp! Typeface</h1>
+            <div className="row">
+                <div className={"media-container"}>
+                    <iframe className="responsive-iframe" src="/stomp/stompwebpage.pdf"></iframe>
+                </div>
+            </div>
         </div>
     );
 }

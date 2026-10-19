@@ -314,7 +314,6 @@ img {
   height: 0;
   padding-top: 56.25% !important;
   cursor: pointer;
-
 }
 
 .music-container {
@@ -331,12 +330,32 @@ img {
   left: 0;
   bottom: 0;
   right: 0;
-  width: stretch;}
+  width: stretch;
+}
 
 
 
-.media-container > iframe, .music-container > iframe {
+.media-container > iframe, .music-container > iframe{
   position: absolute;
+  width: 100%;
+  height: 100%;
+  min-width: 20vw;
+}
+
+.pdf-container {
+  position: relative;
+  overflow: hidden;
+  width: stretch;
+  height: 0;
+  padding-top: 100%;
+}
+
+object {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
   height: 100%;
 }
@@ -353,6 +372,17 @@ img {
 @media (max-width: 1300px) {
   .media-container > *, .music-container > * {
     padding: 0 2vw 0 2vw;
+  }
+
+  object {
+    width: stretch;
+  }
+  .media-container {
+    position: absolute;
+    min-width: 65vw;
+    /*zoom: 80%;*/
+    overflow: hidden;
+    max-width: 65vw;
   }
 }
 
@@ -380,7 +410,7 @@ img {
     /*max-width: 43vw;*/
   }
 
-  .row > :last-child:not(.Portfolio):not(.ImageModal-module__1IdVYa__backdrop, .ImageModal-module__1IdVYa__backdropLight) {
+  .row > :last-child:not(.Portfolio, .ImageModal-module__1IdVYa__backdrop, .ImageModal-module__1IdVYa__backdropLight) {
     max-width: 28vw;
   }
 
@@ -414,6 +444,16 @@ img {
 }
 
 @media (max-width: 599px) {
+  .media-container {
+    position: absolute;
+    min-width: 90vw;
+    min-height: 45vh;
+    max-width: 45vw;
+  }
+
+  /*.media-container > iframe > * {*/
+  /*  zoom: 60%;*/
+  /*}*/
   body {
     grid-template-columns: repeat(6, 1fr);
     grid-template-rows: repeat(14, 1fr);

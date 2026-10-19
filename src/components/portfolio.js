@@ -21,6 +21,11 @@ const portfolioItems_graphic = [
         name: 'Stomp!',
         href: '/portfolio/stomp',
         tag: "Graphic Design, Typeface Design"
+    },
+    {
+        name: 'This Website!',
+        href: 'https://github.com/kelsodumez/kelso.dumez.nz',
+        tag: "I taught myself React + JS Frontend for this site to better understand responsive layouts. No AI was used."
     }
 ];
 

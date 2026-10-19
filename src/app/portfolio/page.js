@@ -18,6 +18,7 @@ export default function Portfolio() {
                 <i>
                     Work displayed in descending chronological order.
                 </i>
+
             </div>
         </div>
     );
