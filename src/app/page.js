@@ -19,9 +19,8 @@ export default function Home() {
                 </p>
                 <p>
                     Feel free to <a href={"/contact"}> contact me </a> if you&#39;re curious about any of
-                    <a href={"/portfolio"}> my work </a> or just wanna talk about something random,
-                    I&#39;ll generally respond within a business day
-                    or so.
+                    <a href={"/portfolio"}> my work </a> or just to talk about something random,
+                    I&#39;ll generally respond within a business day or so.
                 </p>
             </div>
 
