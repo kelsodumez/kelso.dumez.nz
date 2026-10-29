@@ -11,8 +11,11 @@ export default function Home() {
                     weird ways.
                 </p>
                 <p>
-                    Interests of mine include reading fiction (Le Guin & Strugatsky brothers iykyk),
-                    collecting CDs & vinyl, and playing guitar (badly).
+
+                    <a
+                        href={"https://www.canterbury.ac.nz/news-and-events/news/2025/uc-product-design-students-win--18-5k-in-industry-awards-#:~:text=In%20Game,diplomacy"}>
+                        My team and I received a $500 prize from Black Salt Games
+                </a> in 2025 for excellence in Applied Immersive Game Design.
                 </p>
                 <p>
                     Feel free to <a href={"/contact"}> contact me </a> if you&#39;re curious about any of
