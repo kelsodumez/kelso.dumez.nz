@@ -3,6 +3,16 @@ import Link from "next/link";
 
 const portfolioItems_graphic = [
     {
+        name: 'This Website!',
+        href: 'https://github.com/kelsodumez/kelso.dumez.nz',
+        tag: "I taught myself React + JS Frontend for this site to better understand responsive layouts. No AI was used."
+    },
+    {
+        name: 'Character Sheet Commision for Java Asunder',
+        href: '/portfolio/ja-character-sheet',
+        tag: 'Commissioned designed work for an indie TTRPG project'
+    },
+    {
         name: 'Cobalt',
         href: '/portfolio/cobalt',
         tag: "Graphic Design, Brand-Identity"
@@ -21,11 +31,6 @@ const portfolioItems_graphic = [
         name: 'Stomp!',
         href: '/portfolio/stomp',
         tag: "Graphic Design, Typeface Design"
-    },
-    {
-        name: 'This Website!',
-        href: 'https://github.com/kelsodumez/kelso.dumez.nz',
-        tag: "I taught myself React + JS Frontend for this site to better understand responsive layouts. No AI was used."
     }
 ];
 
