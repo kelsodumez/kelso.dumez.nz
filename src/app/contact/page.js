@@ -21,7 +21,7 @@ export default function Portfolio() {
 
                             <div className={"contact-item"}>
                                 <div className={"tag"}>Discord</div>
-                                <a href="https://discord.com/users/274121886298931203" target="_blank">keslo_</a>
+                                <a href="https://discord.com/users/274121886298931203" target="_blank">kelkje</a>
                             </div>
 
                         </div>
