@@ -5,7 +5,7 @@ export default function Portfolio() {
         <div>
             <div className="row">
             <div className={"Portfolio"}>
-                <h2>Digital Design</h2>
+                <h2>Graphic Design</h2>
                 <PortfolioItemsDesign />
             </div>
 
